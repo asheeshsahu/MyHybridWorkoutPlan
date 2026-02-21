@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid Athlete Blueprint</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        @media print {
+            .no-print { display: none; }
+            body { background: white; color: black; }
+            .card { border: 1px solid #e5e7eb; break-inside: avoid; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <div class="max-w-5xl mx-auto p-4 md:p-8">
+        <!-- Header -->
+        <header class="flex flex-col md:flex-row justify-between items-center mb-8 gap-4 border-b pb-6">
+            <div>
+                <h1 class="text-4xl font-800 tracking-tight text-indigo-700 uppercase italic">Hybrid Athlete Blueprint</h1>
+                <p class="text-slate-500 font-semibold uppercase tracking-widest text-sm mt-1">5'11" | 69KG | Aesthetic & Athletic</p>
+            </div>
+            <button onclick="window.print()" class="no-print bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-lg font-bold transition">
+                Print Wall Chart
+            </button>
+        </header>
+
+        <!-- Weekly Schedule Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-7 gap-2 mb-8 uppercase text-center font-bold text-xs tracking-tighter">
+            <div class="bg-indigo-100 p-3 rounded shadow-sm border-t-4 border-indigo-600">Mon<br><span class="text-[10px] text-indigo-500">Gym Upper</span></div>
+            <div class="bg-orange-100 p-3 rounded shadow-sm border-t-4 border-orange-500">Tue<br><span class="text-[10px] text-orange-500">Athletic</span></div>
+            <div class="bg-indigo-100 p-3 rounded shadow-sm border-t-4 border-indigo-600">Wed<br><span class="text-[10px] text-indigo-500">Gym Lower</span></div>
+            <div class="bg-orange-100 p-3 rounded shadow-sm border-t-4 border-orange-500">Thu<br><span class="text-[10px] text-orange-500">Athletic</span></div>
+            <div class="bg-indigo-100 p-3 rounded shadow-sm border-t-4 border-indigo-600">Fri<br><span class="text-[10px] text-indigo-500">Gym Full</span></div>
+            <div class="bg-slate-200 p-3 rounded shadow-sm border-t-4 border-slate-400">Sat<br><span class="text-[10px] text-slate-500">Rest</span></div>
+            <div class="bg-slate-200 p-3 rounded shadow-sm border-t-4 border-slate-400">Sun<br><span class="text-[10px] text-slate-500">Rest</span></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <!-- Column 1: Workout Details -->
+            <div class="lg:col-span-2 space-y-6">
+                
+                <!-- Gym Sessions -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 overflow-hidden relative">
+                    <div class="absolute top-0 left-0 w-2 h-full bg-indigo-600"></div>
+                    <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
+                        <span>🏋️</span> GYM WORKOUTS (HYPERTROPHY)
+                    </h2>
+                    <div class="grid md:grid-cols-3 gap-6 text-sm">
+                        <div class="space-y-3">
+                            <h3 class="font-bold text-indigo-700 border-b pb-1 uppercase">Monday: Upper</h3>
+                            <ul class="space-y-2">
+                                <li><strong>Incline DB Press:</strong> 3 x 10</li>
+                                <li><strong>Weighted Pull-ups:</strong> 3 x Max</li>
+                                <li><strong>DB Lateral Raises:</strong> 4 x 20</li>
+                                <li><strong>DB Bicep Curls:</strong> 3 x 12</li>
+                            </ul>
+                        </div>
+                        <div class="space-y-3">
+                            <h3 class="font-bold text-indigo-700 border-b pb-1 uppercase">Wednesday: Lower</h3>
+                            <ul class="space-y-2">
+                                <li><strong>Back Squat:</strong> 3 x 8</li>
+                                <li><strong>Romanian DL:</strong> 3 x 12</li>
+                                <li><strong>Leg Extension:</strong> 3 x 15</li>
+                                <li><strong>Calf Raises:</strong> 4 x 15</li>
+                            </ul>
+                        </div>
+                        <div class="space-y-3">
+                            <h3 class="font-bold text-indigo-700 border-b pb-1 uppercase">Friday: Full Body</h3>
+                            <ul class="space-y-2">
+                                <li><strong>Weighted Dips:</strong> 3 x 12</li>
+                                <li><strong>Seated Rows:</strong> 3 x 12</li>
+                                <li><strong>Overhead Press:</strong> 3 x 10</li>
+                                <li><strong>Hanging Leg Raises:</strong> 3 x 15</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Athletic Sessions -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 overflow-hidden relative">
+                    <div class="absolute top-0 left-0 w-2 h-full bg-orange-500"></div>
+                    <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
+                        <span>⚡</span> ATHLETIC PERFORMANCE
+                    </h2>
+                    <div class="grid md:grid-cols-2 gap-6 text-sm">
+                        <div class="space-y-3 p-4 bg-orange-50 rounded-lg">
+                            <h3 class="font-bold text-orange-700 uppercase border-b border-orange-200 pb-1">Tuesday: Power & Speed</h3>
+                            <ul class="space-y-1">
+                                <li><strong>KB/DB Swings:</strong> 4 x 20</li>
+                                <li><strong>Box Jumps:</strong> 4 x 5 (Max Height)</li>
+                                <li><strong>Walking Lunges:</strong> 3 x 24 Steps</li>
+                                <li><strong>100m Sprints:</strong> 5 Rounds (Max Effort)</li>
+                            </ul>
+                        </div>
+                        <div class="space-y-3 p-4 bg-orange-50 rounded-lg">
+                            <h3 class="font-bold text-orange-700 uppercase border-b border-orange-200 pb-1">Thursday: Engine</h3>
+                            <ul class="space-y-1">
+                                <li><strong>Skipping:</strong> 10 Minutes</li>
+                                <li><strong>3km Brisk Run:</strong> Goal: Under 15m</li>
+                                <li><strong>Burpees:</strong> 3 x 15</li>
+                                <li><strong>Core Plank:</strong> 3 x 1 Minute</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2: Nutrition Dashboard -->
+            <div class="space-y-6">
+                
+                <!-- Nutrition Timeline -->
+                <div class="bg-slate-900 text-white rounded-xl shadow-xl p-6">
+                    <h2 class="text-xl font-bold mb-6 flex items-center gap-2">
+                        <span>⏰</span> MEAL TIMINGS
+                    </h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3 border-l-2 border-slate-700 pl-4 relative">
+                            <div class="absolute -left-[5px] top-1 w-2 h-2 rounded-full bg-indigo-400"></div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-bold">05:30 AM</p>
+                                <p class="text-sm">1 Banana + Coffee</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 border-l-2 border-indigo-500 pl-4 relative bg-slate-800 p-2 rounded">
+                            <div class="absolute -left-[5px] top-1 w-2 h-2 rounded-full bg-green-400"></div>
+                            <div>
+                                <p class="text-xs text-indigo-400 font-bold uppercase tracking-widest">07:30 AM (Post Workout)</p>
+                                <p class="text-sm font-bold">4 BOILED EGG WHITES</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 border-l-2 border-slate-700 pl-4 relative">
+                            <div class="absolute -left-[5px] top-1 w-2 h-2 rounded-full bg-indigo-400"></div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-bold">08:15 AM</p>
+                                <p class="text-sm italic">The Muscle Recovery Shake</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 border-l-2 border-slate-700 pl-4 relative">
+                            <div class="absolute -left-[5px] top-1 w-2 h-2 rounded-full bg-indigo-400"></div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-bold">01:30 PM</p>
+                                <p class="text-sm">150g Chicken + Dal + 2 Roti + Dahi</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 border-l-2 border-slate-700 pl-4 relative">
+                            <div class="absolute -left-[5px] top-1 w-2 h-2 rounded-full bg-indigo-400"></div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-bold">04:30 PM</p>
+                                <p class="text-sm">100g Paneer cubes or Moong Salad</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 border-l-2 border-slate-700 pl-4 relative">
+                            <div class="absolute -left-[5px] top-1 w-2 h-2 rounded-full bg-indigo-400"></div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-bold">08:30 PM</p>
+                                <p class="text-sm">150g Fish + 1 Roti + Mixed Sabzi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Shake Detail -->
+                <div class="bg-indigo-50 rounded-xl border border-indigo-200 p-6">
+                    <h2 class="font-bold text-indigo-900 text-lg mb-2">🥤 MY RECOVERY SHAKE</h2>
+                    <ul class="text-sm text-indigo-800 space-y-1 mb-4">
+                        <li>• 300ml Milk</li>
+                        <li>• 1/2 Cup Muesli</li>
+                        <li>• 1-2 tbsp Peanut Butter</li>
+                        <li>• 1 Large Banana</li>
+                        <li>• 1 tbsp Honey</li>
+                    </ul>
+                    <div class="bg-white p-3 rounded-lg border border-indigo-100 text-xs italic text-indigo-600">
+                        "Consume this right after your boiled egg whites for maximum mass gain."
+                    </div>
+                </div>
+
+                <!-- Principles -->
+                <div class="bg-slate-50 border-2 border-dashed border-slate-300 rounded-xl p-6">
+                    <h2 class="font-bold text-slate-700 mb-3 uppercase text-sm">Hybrid Principles</h2>
+                    <ul class="text-xs space-y-2 text-slate-600">
+                        <li class="flex items-center gap-2"><span class="text-indigo-600">✔</span> 4 Liters water per day</li>
+                        <li class="flex items-center gap-2"><span class="text-indigo-600">✔</span> In bed by 10:30 PM</li>
+                        <li class="flex items-center gap-2"><span class="text-indigo-600">✔</span> 2-min Dead Hang every morning</li>
+                        <li class="flex items-center gap-2"><span class="text-indigo-600">✔</span> Prioritize form over heavy weight</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="mt-12 text-center text-slate-400 text-[10px] uppercase tracking-[0.2em] no-print">
+            Designed for Peak Performance & Aesthetic Balance
+        </footer>
+    </div>
+
+</body>
+</html>

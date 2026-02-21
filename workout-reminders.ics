@@ -1,0 +1,107 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//HybridFit//Workout Reminders//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:HybridFit Reminders
+X-WR-TIMEZONE:Asia/Kolkata
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Kolkata:20260223T053000
+DTEND;TZID=Asia/Kolkata:20260223T063000
+RRULE:FREQ=WEEKLY;BYDAY=MO
+SUMMARY:🏋️ Upper Body Workout
+DESCRIPTION:Incline DB Press 3×10\nWeighted Pull-ups 3×Max\nDB Lateral Raises 4×20\nDB Bicep Curls 3×12
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:Time for your Upper Body workout!
+END:VALARM
+UID:hybridfit-monday@workout
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Kolkata:20260224T053000
+DTEND;TZID=Asia/Kolkata:20260224T063000
+RRULE:FREQ=WEEKLY;BYDAY=TU
+SUMMARY:⚡ Power & Speed Day
+DESCRIPTION:KB/DB Swings 4×20\nBox Jumps 4×5\nWalking Lunges 3×24\n100m Sprints ×5
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:Time for Power & Speed training!
+END:VALARM
+UID:hybridfit-tuesday@workout
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Kolkata:20260225T053000
+DTEND;TZID=Asia/Kolkata:20260225T063000
+RRULE:FREQ=WEEKLY;BYDAY=WE
+SUMMARY:🏋️ Lower Body Workout
+DESCRIPTION:Back Squat 3×8\nRomanian DL 3×12\nLeg Extension 3×15\nCalf Raises 4×15
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:Time for your Lower Body workout!
+END:VALARM
+UID:hybridfit-wednesday@workout
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Kolkata:20260226T053000
+DTEND;TZID=Asia/Kolkata:20260226T063000
+RRULE:FREQ=WEEKLY;BYDAY=TH
+SUMMARY:⚡ Engine Day
+DESCRIPTION:Skipping 10min\n3km Brisk Run\nBurpees 3×15\nCore Plank 3×1min
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:Time for Engine training!
+END:VALARM
+UID:hybridfit-thursday@workout
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Kolkata:20260227T053000
+DTEND;TZID=Asia/Kolkata:20260227T063000
+RRULE:FREQ=WEEKLY;BYDAY=FR
+SUMMARY:🏋️ Full Body Workout
+DESCRIPTION:Weighted Dips 3×12\nSeated Rows 3×12\nOverhead Press 3×10\nHanging Leg Raises 3×15
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:Time for your Full Body workout!
+END:VALARM
+UID:hybridfit-friday@workout
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Kolkata:20260223T073000
+DTEND;TZID=Asia/Kolkata:20260223T080000
+RRULE:FREQ=DAILY
+SUMMARY:🍳 Post-Workout Meal
+DESCRIPTION:4 Boiled Egg Whites + Recovery Shake\n\nShake: 300ml Milk, 1/2 Cup Muesli, 1-2 tbsp Peanut Butter, 1 Banana, 1 tbsp Honey
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:Time for your post-workout nutrition!
+END:VALARM
+UID:hybridfit-meal@daily
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Kolkata:20260223T220000
+DTEND;TZID=Asia/Kolkata:20260223T223000
+RRULE:FREQ=DAILY
+SUMMARY:🌙 Bedtime Reminder
+DESCRIPTION:Wind down for quality sleep. In bed by 10:30 PM for optimal recovery.
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:Time to wind down for bed!
+END:VALARM
+UID:hybridfit-sleep@daily
+END:VEVENT
+
+END:VCALENDAR

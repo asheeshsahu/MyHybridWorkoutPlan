@@ -1,0 +1,24 @@
+{
+    "name": "HybridFit - Workout Tracker",
+    "short_name": "HybridFit",
+    "description": "Track your hybrid athlete workouts with daily reminders and follow-ups",
+    "start_url": "/app.html",
+    "display": "standalone",
+    "background_color": "#0f0f23",
+    "theme_color": "#0f0f23",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
