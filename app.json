@@ -16,7 +16,11 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.hybridfit.app",
       "infoPlist": {
-        "UIBackgroundModes": ["remote-notification"]
+        "UIBackgroundModes": [
+          "remote-notification",
+          "remote-notification"
+        ],
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
@@ -38,6 +42,11 @@
           "color": "#7c3aed"
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "07c7378d-aad2-4889-853f-184895c617a3"
+      }
+    }
   }
 }
